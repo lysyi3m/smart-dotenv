@@ -1,0 +1,34 @@
+{
+  "name": "@lysyi3m/smart-dotenv",
+  "version": "1.0.0",
+  "description": "Load environment variables from .env files with defaults and fallback to process.env",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "development": "babel src -w -d lib",
+    "test": "jest --config ./jest.config.js",
+    "lint": "eslint --quiet . --ext .js --fix",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lysyi3m/smart-dotenv.git"
+  },
+  "author": "Emil Kashkevich <emil.kashkevich@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lysyi3m/smart-dotenv/issues"
+  },
+  "homepage": "https://github.com/lysyi3m/smart-dotenv#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/preset-env": "^7.13.15",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.24.0",
+    "eslint-config-standart": "^0.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
+  }
+}
